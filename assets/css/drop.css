@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'roboto_mediumregular';
+    src: url('../../fonts/roboto-medium-webfont.woff2') format('woff2'), url('../../fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto_mediumregular';
+}
+
+.panel {
+    height: 60px;
+    position: fixed;
+    background: blue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+}
+
+label,
+input {
+    font-size: 20px;
+    padding: 8px 15px;
+    margin: 0 15px;
+    background-color: #E5D542;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+#files-list {
+    padding: 90px
+}
+
+input[type='file'] {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 8px 15px;
+    background-color: rgba(229, 213, 66, 0.432);
+    margin: 10px;
+}

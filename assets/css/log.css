@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../../fonts/roboto-regular-webfont.woff2') format('woff2'), url('../../fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'robotoregular';
+}
+
+body {
+    background-image: url("../images/Canet_crop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    max-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    height: 300px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    /* background-color: rgba(229, 213, 66, 0.775); */
+    background-color: rgba(38, 101, 124, 0.603);
+    font-size: 25px;
+}
+
+input {
+    padding: 5px;
+    width: 250px;
+    margin: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: aliceblue;
+    font-size: 23px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+input::placeholder {
+    color: white;
+    font-family: 'robotoregular';
+}
+
+input[type="submit"] {
+    background-color: rgba(38, 101, 124, 0.699);
+    border: none;
+    font-size: 25px;
+    padding: 15px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(38, 101, 124);
+}
+
+label {
+    text-align: right;
+    cursor: pointer;
+}
+
+.correct {
+    border-bottom: 1px solid coral;
+}
+
+.correct::placeholder {
+    color: red;
+}
+
+.msg {
+    background-color: coral;
+    width: 450px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: #fafafa;
+    padding: 15px;
+}
